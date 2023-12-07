@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Dell/OneDrive/Desktop/Real_projects/Kidney-Tumor_classification_Deep_learning/mlruns/0/ffba90ec6cd9447a9fdfd2c29688cbcd/artifacts
+end_time: 1701943585605
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ffba90ec6cd9447a9fdfd2c29688cbcd
+run_name: blushing-shrimp-709
+run_uuid: ffba90ec6cd9447a9fdfd2c29688cbcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701943555792
+status: 3
+tags: []
+user_id: Dell

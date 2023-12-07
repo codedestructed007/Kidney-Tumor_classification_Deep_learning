@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Dell/OneDrive/Desktop/Real_projects/Kidney-Tumor_classification_Deep_learning/mlruns/0/9d3a71e4a8104689afb77946e03f0b52/artifacts
+end_time: 1701939245422
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9d3a71e4a8104689afb77946e03f0b52
+run_name: illustrious-lamb-544
+run_uuid: 9d3a71e4a8104689afb77946e03f0b52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701939211756
+status: 3
+tags: []
+user_id: Dell
