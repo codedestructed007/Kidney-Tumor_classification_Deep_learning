@@ -1,7 +1,7 @@
 import os
 from src.cnnClassifier.constants import *
 from src.cnnClassifier.utils.common import read_yaml,create_directories
-from src.cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig,ModelTrainingConfig
+from src.cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig,ModelTrainingConfig, ModelEvaluationConfig
 
 
 
@@ -54,13 +54,13 @@ class ConfigurationManager:
         params = self.params
         prepare_base_model = self.config.prepare_base_model
         create_directories([config.root_dir])
-        training_data = os.path.join(self.config.data_ingestion.unzip_dir,'kidney_tumor_classificaiton_dataset')
+        self.training_data = os.path.join(self.config.data_ingestion.unzip_dir,'kidney_tumor_classificaiton_dataset')
         
         training_model_config = ModelTrainingConfig(
             root_dir=Path(config.root_dir),
             trained_model_path=Path(config.trained_model_path),
             updated_base_model_path=Path(prepare_base_model.updated_base_model_path),
-            training_data=Path(training_data),
+            training_data=Path(self.training_data),
             params_epochs=params.EPOCHS,
             params_batch_size=params.BATCH_SIZE,
             params_augmentation=params.AUGMENTATION,
@@ -68,3 +68,16 @@ class ConfigurationManager:
         )
         
         return training_model_config
+    
+    
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        evaluation_config = ModelEvaluationConfig(
+            path_to_model= "artifacts/training/model.h5",
+            training_data="artifacts/data_ingestion/kidney_tumor_classificaiton_dataset",
+            all_params=self.params,
+            mlflow_uri="https://dagshub.com/codedestructed007/Kidney-Tumor_classification_Deep_learning.mlflow",
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+            
+        )
+        return evaluation_config
