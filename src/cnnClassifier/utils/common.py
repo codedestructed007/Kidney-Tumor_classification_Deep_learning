@@ -117,7 +117,7 @@ def get_size(path : Path) -> str:
 @ensure_annotations
 def decodeImage(imgstring, fileName):
     imgdata = base64.b64decode(imgstring)
-    with open(fileName, 'w') as f:
+    with open(fileName, 'wb') as f:
         f.write(imgdata)
         f.close()
         

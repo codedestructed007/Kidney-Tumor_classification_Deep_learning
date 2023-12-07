@@ -1,7 +1,6 @@
 import sys
 sys.path.append(r'c:\\Users\\Dell\\OneDrive\\Desktop\\Real_projects\\Kidney-Tumor_classification_Deep_learning')
 
-
 from src.cnnClassifier import logger
 from src.cnnClassifier.config.configuration import ConfigurationManager
 from src.cnnClassifier.components.model_training import Training

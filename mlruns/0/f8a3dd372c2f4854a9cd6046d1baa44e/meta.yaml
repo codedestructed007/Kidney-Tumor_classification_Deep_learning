@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Dell/OneDrive/Desktop/Real_projects/Kidney-Tumor_classification_Deep_learning/mlruns/0/f8a3dd372c2f4854a9cd6046d1baa44e/artifacts
+end_time: 1701956324911
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f8a3dd372c2f4854a9cd6046d1baa44e
+run_name: bold-snake-900
+run_uuid: f8a3dd372c2f4854a9cd6046d1baa44e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701956285456
+status: 3
+tags: []
+user_id: Dell

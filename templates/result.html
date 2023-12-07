@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+        body { background-color: #eff2f9; }
+        .result-img { max-width: 200px; }
+    </style>
+</head>
+<body>
+    <section class="result">
+        <h3 class="text-center py-4">Prediction Result</h3>
+        <div class="result-img">
+            {% if prediction == 'Tumor' %}
+                <img src="static_files/check-mark-1292787_1280.webp" alt="Right Tick">
+            {% else %}
+                <img src="static_files/392abccf8a383eed947bd4ac0c3cb171.jpg" alt="Cross Tick">
+            {% endif %}
+        </div>
+    </section>
+</body>
+</html>
